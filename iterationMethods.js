@@ -53,11 +53,15 @@ Combine the filter and map methods to perform the following tasks:
 ******************************************************************/
 //5)
 const numbersFilter = numbers.filter(function(num){
-    if(num >= 20  ){
-        return num **2;
-    }
+     return (num >= 20  )
 });
-console.log(numbersFilter);
+
+const numberFilterMap = numbersFilter.map(function(num){
+   return num **2
+});
+
+
+console.log(numberFilterMap);
 
 
 
